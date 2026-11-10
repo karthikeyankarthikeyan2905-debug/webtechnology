@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<h2>Book Information</h2>
+
+<button id="load">Load Books</button>
+
+<ul id="books"></ul>
+
+<script>
+$(document).ready(function() {
+
+    $("#load").click(function() {
+
+        $.ajax({
+            url: "books.json",
+            type: "GET",
+            dataType: "json",
+
+            success: function(data) {
+
+                $("#books").empty();
+
+                $.each(data, function(index, book) {
+                    $("#books").append(
+                        "<li>" + book.title +
+                        " - " + book.author + "</li>"
+                    );
+                });
+            }
+        });
+
+    });
+
+});
+</script>
+
+</body>
+</html>
