@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IWT Lab Projects</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+header {
+    background: #18243a;
+    color: white;
+    padding: 35px 8%;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.container {
+    width: 85%;
+    margin: 35px auto;
+}
+
+.section-title {
+    margin-bottom: 22px;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: white;
+    padding: 18px 25px;
+    border-radius: 9px;
+    border: 1px solid #e5e7eb;
+}
+
+.stat-box h3 {
+    color: #2563eb;
+    font-size: 25px;
+}
+
+.stat-box p {
+    color: #666;
+    margin-top: 5px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+.number {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.tech {
+    display: inline-block;
+    background: #eaf0ff;
+    color: #2453ad;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 13px;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+    flex: 1;
+}
+
+.view {
+    background: #2563eb;
+    color: white;
+}
+
+.github {
+    background: #222;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    margin-top: 40px;
+}
+
+@media(max-width: 900px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Internet & Web Technology Lab</h1>
+    <p>Pondicherry University | MCA - III Semester</p>
+    <p>Department of Computer Science</p>
+</header>
+
+<div class="container">
+
+    <div class="stats">
+        <div class="stat-box">
+            <h3>10</h3>
+            <p>Total Projects</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>03</h3>
+            <p>Web Technologies</p>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>My Lab Projects</h2>
+        <p>All 10 Internet and Web Technology practical exercises.</p>
+    </div>
+
+    <div class="projects">
+
+        <div class="card">
+            <div class="number">PROJECT 01</div>
+            <h3>Resume Webpage</h3>
+            <p>A personal resume webpage with image and details.</p>
+            <span class="tech">HTML</span>
+            <div class="buttons">
+                <a href="./01-resume/" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/01-resume" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 02</div>
+            <h3>Online Shopping</h3>
+            <p>Shopping webpage displaying products and details.</p>
+            <span class="tech">HTML, CSS</span>
+            <div class="buttons">
+                <a href="./02-shopping/" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/02-shopping" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 03</div>
+            <h3>Online Quiz</h3>
+            <p>Interactive quiz with 20 questions and score calculation.</p>
+            <span class="tech">HTML, CSS, JavaScript</span>
+            <div class="buttons">
+                <a href="./03-quiz/" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/03-quiz" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 04</div>
+            <h3>Scientific Calculator</h3>
+            <p>Calculator with basic and scientific functions.</p>
+            <span class="tech">HTML, CSS, JavaScript</span>
+            <div class="buttons">
+                <a href="./04-calculator/" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/04-calculator" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 05</div>
+            <h3>Employee Management</h3>
+            <p>Enter employee details and store them in a database.</p>
+            <span class="tech">PHP, MySQL</span>
+            <div class="buttons">
+                <a href="#" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/05-employee" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 06</div>
+            <h3>Department Management</h3>
+            <p>Department website with home, login and registration.</p>
+            <span class="tech">HTML, CSS, JS, PHP, MySQL</span>
+            <div class="buttons">
+                <a href="#" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/06-department" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 07</div>
+            <h3>Company Management</h3>
+            <p>Company website with employee and admin login.</p>
+            <span class="tech">HTML, CSS, JS, PHP, MySQL</span>
+            <div class="buttons">
+                <a href="#" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/07-company" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 08</div>
+            <h3>Contact Management</h3>
+            <p>Add, view, edit and delete contact information.</p>
+            <span class="tech">HTML, CSS, JS, PHP, MySQL</span>
+            <div class="buttons">
+                <a href="#" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/08-contact" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 09</div>
+            <h3>Weather API</h3>
+            <p>Fetch and display weather data using AJAX and JSON.</p>
+            <span class="tech">HTML, JavaScript, AJAX, JSON</span>
+            <div class="buttons">
+                <a href="./09-weather/" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/09-weather" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="number">PROJECT 10</div>
+            <h3>Books API</h3>
+            <p>Fetch and display books using jQuery AJAX.</p>
+            <span class="tech">HTML, JavaScript, jQuery, AJAX</span>
+            <div class="buttons">
+                <a href="./10-books/" class="btn view">View Project</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/tree/main/10-books" class="btn github">GitHub Code</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Internet & Web Technology Lab | MCA III Semester</p>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
